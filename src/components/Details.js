@@ -20,5 +20,5 @@ class Details extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBFPmSCt3luwSVnnNX3_zpjuBpqM8fADn8'
+  apiKey: ''
 })(Details);

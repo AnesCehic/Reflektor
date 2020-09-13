@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { Switch } from '@material-ui/core';
 
 import Axios from '../axios';
 import { isError } from './isError';
@@ -81,7 +80,6 @@ export default class AddAdmin extends React.Component {
               fullWidth
               id="email"
               label="Email Address"
-              name="email"
               autoComplete="email"
               autoFocus
               name="username"
@@ -94,7 +92,6 @@ export default class AddAdmin extends React.Component {
               margin="normal"
               required
               fullWidth
-              name="password"
               label="Password"
               type="password"
               id="password"
