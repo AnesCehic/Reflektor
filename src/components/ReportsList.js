@@ -23,7 +23,9 @@ export default class ReportsList extends Component {
     })
       .then(res => {
         alert("Prijava obrisana");
-        window.location.reload();
+        this.setState({
+          reports: this.state.reports.filter(r => r.id !== id)
+        })
       })
       .catch(err => {
         alert("Ne možete obrisati prijavu!")
