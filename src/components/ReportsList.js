@@ -76,10 +76,10 @@ export default class ReportsList extends Component {
               <p>Prijava kreirana: {r.createdAt.split("T")[0].split("-").reverse().join("-")}</p>
               
               <p>
-                <a href={`http://34.89.184.202:8080/${r.imageName}`}>Vidi sliku</a>
+                { r.imageName ? <a href={`https://34.89.184.202:8080/images/${r.imageName}`}>Vidi sliku</a> : null }
               </p>
               <p>
-                <a href={`http://34.89.184.202:8080/images/${r.imageName}`}>Vidi sliku</a>
+                { r.videoName ? <a href={`https://34.89.184.202:8080/images/${r.videoName}`}>Vidi video</a> : null }
               </p>
               <a href={`https://www.google.com/maps/@${r.locationCode},13z`} target="_blank">Vidi na mapi</a>
               <br />
