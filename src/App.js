@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         {
-          !localStorage.getItem("token") ? <Route path="/" exact component={Login} /> : <Redirect to="/dashboard" />
+          !localStorage.getItem("token") ? <Route path="/" exact component={Login} /> : <Redirect to="/dashboard/statistics/stat" />
         }
         {
           localStorage.getItem("token") ? <Route path="/dashboard/statistics/stat" component={CustomAppBar} /> : <Redirect to="/" />
