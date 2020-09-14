@@ -26,6 +26,7 @@ import AllReports from '../AllReports';
 
 import Logo from './bijeli.png'
 import Image from '../Image';
+import Statistics from '../Statistics';
 
 const drawerWidth = 240;
 
@@ -116,7 +117,12 @@ export default function ClippedDrawer() {
           </Link>
           <Link to="/dashboard/admins/allUsers">
             <ListItem button key="addAdmin">
-              <ListItemText primary="Lista users" />
+              <ListItemText primary="Lista korisnika" />
+            </ListItem>
+          </Link>
+          <Link to="/dashboard/statistics/stat">
+            <ListItem button key="addAdmin">
+              <ListItemText primary="Statistika" />
             </ListItem>
           </Link></div>
           : null }
@@ -125,6 +131,7 @@ export default function ClippedDrawer() {
       <main className={classes.content}>
         <Toolbar />
         <Route path="/dashboard" exact component={AllReports} />
+        <Route path="/dashboard/statistics/stat" component={Statistics} />
         <Route path="/dashboard/:groupId" exact component={ReportsList} />
         <Route path="/dashboard/details/:id" component={Details} />
         <Route path="/dashboard/admins/addAdmin" component={AddAdmin} />
