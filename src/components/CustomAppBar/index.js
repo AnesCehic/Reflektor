@@ -95,11 +95,11 @@ export default function ClippedDrawer() {
           <h3>Categories</h3>
           <Divider />
           <List>
-            {/*<Link to={`/dashboard`}>
+            <Link to={`/dashboard`}>
               <ListItem button key="Sve prijave">
                 <ListItemText primary="Sve prijave" />
               </ListItem>
-            </Link>*/}
+            </Link>
             {groups.map((g, index) => (
               <Link to={`/dashboard/${g}`}>
                 <ListItem button key={index}>
