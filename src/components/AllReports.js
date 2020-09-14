@@ -60,10 +60,10 @@ export default class AllReports extends Component {
               <p>Prijava kreirana: {r.createdAt.split("T")[0].split("-").reverse().join("-")}</p>
               
               <p>
-                { r.imageName ? <a href={`https://34.89.184.202:8080/images/${r.imageName}`}>Vidi sliku</a> : null }
+                { r.imageName ? <a href={`https://reflektor.live/images/${r.imageName}`}>Vidi sliku</a> : null }
               </p>
               <p>
-                { r.videoName ? <a href={`https://34.89.184.202:8080/images/${r.videoName}`}>Vidi video</a> : null }
+                { r.videoName ? <a href={`https://reflektor.live/images/${r.videoName}`}>Vidi video</a> : null }
               </p>
               <a href={`https://www.google.com/maps/@${r.locationCode},13z`} target="_blank">Vidi na mapi</a>
               <br />
