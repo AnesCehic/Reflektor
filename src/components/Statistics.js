@@ -34,7 +34,8 @@ export default class Statistics extends Component {
   render() {
     return (
       <div>
-        <h1>Statistika</h1>
+        <h1>Prijave po kategorijama
+        </h1>
 
         <Bar
           data={{
