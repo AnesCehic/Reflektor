@@ -76,6 +76,7 @@ export default class ReportsList extends Component {
             return <div key={r.id} style={{ border: "1px solid black", padding: "10px", borderRadius: "10px", boxShadow: "1px 5px 5px 1px grey" }}>
               <h2>Naziv: {r.description}</h2>
               <p>Prijava kreirana: {r.createdAt.split("T")[0].split("-").reverse().join("-")}</p>
+              <p>Kategorija: {r.category}</p>
               
               <p>
                 { r.imageName ? <a href={`https://reflektor.live/images/${r.imageName}`}>Vidi sliku</a> : null }

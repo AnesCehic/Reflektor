@@ -14,7 +14,7 @@ function App() {
           !localStorage.getItem("token") ? <Route path="/" exact component={Login} /> : <Redirect to="/dashboard" />
         }
         {
-          localStorage.getItem("token") ? <Route path="/dashboard" component={CustomAppBar} /> : <Redirect to="/" />
+          localStorage.getItem("token") ? <Route path="/dashboard/statistics/stat" component={CustomAppBar} /> : <Redirect to="/" />
         }
       </Router>
     </div>
