@@ -79,7 +79,7 @@ export default class ReportsList extends Component {
                 <a href={`http://34.89.184.202:8080/${r.imageName}`}>Vidi sliku</a>
               </p>
               <p>
-                <a href={`http://34.89.184.202:8080/${r.imageName}`}>Vidi sliku</a>
+                <a href={`http://34.89.184.202:8080/images/${r.imageName}`}>Vidi sliku</a>
               </p>
               <a href={`https://www.google.com/maps/@${r.locationCode},13z`} target="_blank">Vidi na mapi</a>
               <br />
