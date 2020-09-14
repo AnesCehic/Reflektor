@@ -81,7 +81,7 @@ export default class ReportsList extends Component {
               <p>
                 <a href={`http://34.89.184.202:8080/${r.imageName}`}>Vidi sliku</a>
               </p>
-              <a href={`https://www.google.com/maps/@${43.4104079},${18.174408},13z`} target="_blank">Vidi na mapi</a>
+              <a href={`https://www.google.com/maps/@${r.locationCode},13z`} target="_blank">Vidi na mapi</a>
               <br />
               <br />
               <Button color="primary" variant="contained" onClick={() => this.deleteReport(r.id)}>Obrisi prijiavu</Button>
