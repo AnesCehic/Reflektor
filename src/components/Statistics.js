@@ -41,6 +41,7 @@ export default class Statistics extends Component {
           data={{
             labels: Object.keys(this.state.reports),
             datasets: [{
+                label: 'Prijave',
                 data: Object.values(this.state.reports),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
